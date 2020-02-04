@@ -5,7 +5,6 @@ import RefundFlyout from './RefundFlyout';
 
 const Refund = ({ price }) => {
   const [toggle, setToggle] = useState(false);
-
   return (
     <Wrapper>
       { toggle

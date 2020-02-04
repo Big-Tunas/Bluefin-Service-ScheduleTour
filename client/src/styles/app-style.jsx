@@ -4,7 +4,7 @@ const AppWrapper = styled.div`
   height: 436px;
   width: 313px;
   border: 1px solid black;
-  margin-left: 100px;
+  margin-left: 20px;
 `;
 
 const Header = styled.h3`

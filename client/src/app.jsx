@@ -64,7 +64,6 @@ export default class App extends Component {
 
   render() {
     const { houseData, selectedDate, chat } = this.state;
-
     return (
       <AppWrapper>
         <GlobalStyles />
