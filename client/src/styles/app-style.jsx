@@ -3,8 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 const AppWrapper = styled.div`
   height: 436px;
   width: 313px;
-  border: 1px solid black;
-  margin-left: 100px;
+
 `;
 
 const Header = styled.h3`
