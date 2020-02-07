@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 import App from './src/app';
 
 //example listing Id
-ReactDOM.render(<App listingId={199099335}/>, document.getElementById('mark'));
+ReactDOM.render(<App listingId={Math.random() * 99} />, document.getElementById('mark'));

@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '',
+  password: 'HR',
   database: 'scheduleTours'
 });
 
@@ -22,7 +22,7 @@ for (let i = 0; i < 100; i++) {
 
 for (let i = 0; i < 100; i++) {
   let q3 = 'INSERT INTO listings (id, listing_price, agent_id) VALUES (?, ?, ?)';
-  let houseId = Math.floor(Math.random() * (199999999 - 100000000) + 100000000);
+  let houseId = i;
   let listingPrice = Math.floor(Math.random() * (10000000 - 200000) + 20000);
   let agentId = Math.floor(Math.random() * (100 - 1) + 1);
   db.query(q3, [houseId, listingPrice, agentId]);
