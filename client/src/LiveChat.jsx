@@ -28,8 +28,8 @@ export default class LiveChat extends React.Component {
       if (input.length !== 0) {
         chat.push(input);
       }
+      this.setState({ chat, input: '' });
     }
-    this.setState({ chat, input: '' });
   }
 
   handleInput(event) {
@@ -54,7 +54,8 @@ export default class LiveChat extends React.Component {
             </ChatContainer>
             <Input placeholder="Type a message..."
             onChange={this.handleInput.bind(this)}
-            onKeyDown={this.handleEnter.bind(this)}/>
+            onKeyDown={this.handleEnter.bind(this)}
+            value={input}/>
           </Wrapper>
         )
         : (

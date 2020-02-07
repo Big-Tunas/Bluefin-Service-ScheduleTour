@@ -6,8 +6,9 @@ module.exports = {
   entry: path.join(srcDir, 'index.jsx'),
   output: {
     path: distDir,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
+  mode: 'production',
   module: {
     rules: [
       {
@@ -17,12 +18,12 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        }
-      }
-    ]
+          },
+        },
+      },
+    ],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
-  }
+    extensions: ['.js', '.jsx'],
+  },
 };
