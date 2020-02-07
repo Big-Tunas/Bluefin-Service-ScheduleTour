@@ -70,17 +70,11 @@ export default class App extends Component {
         <GlobalStyles />
         <Header>Go Tour This Home</Header>
         <CalendarWrapper>
-          {
-            houseData === null
-              ? <p>Hello</p>
-              : (
-                <CalendarContainer
-                  dates={getDates()}
-                  clickFn={this.calendarEntryClick}
-                  selectedDate={selectedDate}
-                />
-              )
-          }
+          <CalendarContainer
+            dates={getDates()}
+            clickFn={this.calendarEntryClick}
+            selectedDate={selectedDate}
+          />
         </CalendarWrapper>
         <ScheduleButton
           clickFn={this.scheduleClick}
@@ -92,7 +86,7 @@ export default class App extends Component {
         />
         <Refund
           price={houseData
-            ? houseData.listing_price : 'Didnt get it'}
+            ? houseData.listing_price : 'No phone number listed'}
         />
         <StartOffer />
         { chat ? <LiveChat /> : <></>}

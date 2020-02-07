@@ -25,13 +25,15 @@ export default class LiveChat extends React.Component {
   handleEnter(event) {
     const { chat, input } = this.state;
     if (event.keyCode === 13) {
-      console.log('enter');
-      chat.push(input);
-      this.setState({ chat, input: '' });
+      if (input.length !== 0) {
+        chat.push(input);
+      }
     }
+    this.setState({ chat, input: '' });
   }
 
   handleInput(event) {
+    event.preventDefault();
     this.setState({ input: event.target.value });
   }
 
