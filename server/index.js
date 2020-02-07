@@ -18,11 +18,17 @@ mainApp.get('/house', (req, res) => {
   const id = q.listingId;
   db.getData(id, (err, results) => {
     if (err) {
+<<<<<<< HEAD
       console.log(err)
       res.set('access-control-allow-origin', '*');
       res.send(err);
     } else {
       console.log(results)
+=======
+      res.set('access-control-allow-origin', '*');
+      res.send(err);
+    } else {
+>>>>>>> master
       res.set('access-control-allow-origin', '*');
       res.send(results);
     }
