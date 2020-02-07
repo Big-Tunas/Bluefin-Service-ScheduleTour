@@ -43,6 +43,7 @@ export default class CalendarContainer extends React.Component {
       }
       refs[currentStart].current.scrollIntoView({
         behavior: 'smooth',
+        block: 'center',
         inline: 'start',
       });
       if (!currentStart) {
@@ -65,6 +66,7 @@ export default class CalendarContainer extends React.Component {
       }
       refs[currentStart].current.scrollIntoView({
         behavior: 'smooth',
+        block: 'center',
         inline: 'start',
       });
     });

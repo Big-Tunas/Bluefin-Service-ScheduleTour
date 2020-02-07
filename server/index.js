@@ -13,9 +13,9 @@ mainApp.use(express.static(path.join(__dirname, '../public')));
 mainApp.use(morgan('dev'));
 mainApp.use(express.json());
 
-mainApp.get('/bundle', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/bundle.js'))
-})
+// mainApp.get('/bundle', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../public/bundle.js'))
+// })
 
 
 mainApp.get('/house', (req, res) => {
