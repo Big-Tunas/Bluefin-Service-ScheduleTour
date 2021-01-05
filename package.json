@@ -16,7 +16,7 @@
     "test-w": "jest --config ./jest.config.js --watch --coverage --verbose"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bluebird": "^3.7.2",
     "express": "^4.17.1",
     "jest-environment-enzyme": "^7.1.2",
